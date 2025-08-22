@@ -23,4 +23,22 @@ btestexplicit:
 clean:
 	rm -f *.o btest fshow ishow *~
 
+# Default directory for generated submissions
+OUTDIR := ../generated-turnins/lab-1
+# Project name = current directory name
+PROJ := $(notdir $(CURDIR))
+
+.PHONY: submit
+submit:
+	mkdir -p $(OUTDIR)
+	@out="$(OUTDIR)/$(PROJ).zip"; \
+	i=0; \
+	while [ -e "$$out" ]; do \
+	  i=$$((i+1)); \
+	  suf=$$(printf -- "-%03d" "$$i"); \
+	  out="$(OUTDIR)/$(PROJ)$$suf.zip"; \
+	done; \
+	echo "Creating $$out"; \
+	zip -r "$$out" .
+
 
