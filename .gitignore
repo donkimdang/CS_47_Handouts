@@ -1,0 +1,4 @@
+# Ignore the generated-turnins directory
+generated-turnins/
+
+*.DS_Store

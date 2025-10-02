@@ -22,7 +22,7 @@ $(TURNIN_DIR):
 
 # Submit target: create unique zip
 submit: $(TURNIN_DIR)
-	zip -r $(ZIPFILE) * -x $(notdir $(ZIPFILE)) -x Makefile
+	zip -r $(ZIPFILE) . -x $(notdir $(ZIPFILE)) -x ./Makefile
 
 # Clean target: wipes generated zips (use with caution)
 clean:
