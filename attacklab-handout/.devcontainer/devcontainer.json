@@ -1,0 +1,15 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {
+      "installZsh": "false",
+      "installOhMyZsh": "false",
+      "upgradePackages": "true"
+    },
+    "ghcr.io/devcontainers/features/cpp:1": {
+      "installTools": "true",
+      "installOperation": "install",
+      "version": "latest"
+    }
+  }
+}
