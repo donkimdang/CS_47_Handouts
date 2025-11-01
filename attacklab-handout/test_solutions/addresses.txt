@@ -1,0 +1,2 @@
+stack:0x556453f8
+offset:24
