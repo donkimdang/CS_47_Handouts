@@ -1,15 +1,4 @@
 {
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
-  "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {
-      "installZsh": "false",
-      "installOhMyZsh": "false",
-      "upgradePackages": "true"
-    },
-    "ghcr.io/devcontainers/features/cpp:1": {
-      "installTools": "true",
-      "installOperation": "install",
-      "version": "latest"
-    }
-  }
+  "postCreateCommand": "export DEBIAN_FRONTEND=noninteractive && apt-get update && apt-get install -y build-essential gdb"
 }
